@@ -10,4 +10,4 @@ client.messages
         to: `01234567889`
     })
     .then(message => console.log(message.sid))
-    console.log("ayam");
+    console.log("ayama");
