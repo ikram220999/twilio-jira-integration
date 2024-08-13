@@ -55,7 +55,7 @@ app.post("/whatsapp", (req, res) => {
 
   if (result == 2) {
     axios
-      .post("https://fulkrum.atlassian.net/rest/api/2/issue", jiraIssue, {
+      .post(`${process.env.JIRA_BASE_URL}/rest/api/2/issue`, jiraIssue, {
         auth: {
           username: process.env.EMAIL,
           password: process.env.API_KEY,
